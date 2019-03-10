@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body class="login-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class=" login-title">
+                        <img src="assets/img/Cowicon.svg" width="50" height="50" class="d-inline-block align-top" alt="">
+                        <strong>Ternakku</strong><br>
+                    </div>
+                    <div class="login-input">
+                            Daftar akun baru sekarang
+                    </div>
+                    <form onsubmit="validationSignUp();" action="dashboard.html">
+                        <!--  onsubmit="validation();" -->
+                        <input class="login-input" type="text" name="" id ="username" placeholder="Username"><br><br>
+                        <input class="login-input" type="email" name="" id ="email" placeholder="Email"><br><br>
+                        <input class="login-input" type="password" name="" id="password" placeholder="Password"><br><br>
+                        <input class="login-input" type="password" name="" id="confirm-password" placeholder="Konfirmasi Password"><br><br>
+                        <input class="tambah" type="checkbox" id="agreement" name="">Saya menyetujui Aturan Ternakku
+                        <input type="submit" id="middle-submit" class="login-bottom btn btn-secondary" value="Daftar">
+                    </form>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

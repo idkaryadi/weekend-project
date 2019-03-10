@@ -1,0 +1,999 @@
+{
+	"variables": [],
+	"info": {
+		"name": "weekend-project",
+		"_postman_id": "923cde18-8e0d-b1cb-9428-9365261f9492",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Public",
+			"description": "",
+			"item": [
+				{
+					"name": "Get public",
+					"request": {
+						"url": "0.0.0.0:5000/public",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get public id",
+					"request": {
+						"url": "0.0.0.0:5000/public/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Post public",
+					"request": {
+						"url": "0.0.0.0:5000/public",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"eka\",\n\t\"password\": \"123456\",\n\t\"status\": \"user\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "User/TransactionDetail",
+					"description": "",
+					"item": [
+						{
+							"name": "Post user transaction_detail (use jwt)",
+							"request": {
+								"url": "0.0.0.0:5000/user/transaction_detail",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MDE1NDAsIm5iZiI6MTU1MTcwMTU0MCwianRpIjoiNjY5NzQ4ZjctMGE5My00NWU5LTg0ZWUtMTg1ZTY3NmMzMGM2IiwiZXhwIjoxNTUxNzg3OTQwLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.MS17HHS0Mh4dLCm0PdEs0cvbyO-j1racnWYrDMY4eF4",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"product_id\":5,\n\t\"qty\":4\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Get user transaction_detail (use jwt)",
+							"request": {
+								"url": "0.0.0.0:5000/user/transaction_detail",
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MDE1NDAsIm5iZiI6MTU1MTcwMTU0MCwianRpIjoiNjY5NzQ4ZjctMGE5My00NWU5LTg0ZWUtMTg1ZTY3NmMzMGM2IiwiZXhwIjoxNTUxNzg3OTQwLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.MS17HHS0Mh4dLCm0PdEs0cvbyO-j1racnWYrDMY4eF4",
+										"description": ""
+									}
+								],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Put user transaction_detail Id",
+							"request": {
+								"url": "0.0.0.0:5000/user/transaction_detail/3",
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MDE1NDAsIm5iZiI6MTU1MTcwMTU0MCwianRpIjoiNjY5NzQ4ZjctMGE5My00NWU5LTg0ZWUtMTg1ZTY3NmMzMGM2IiwiZXhwIjoxNTUxNzg3OTQwLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.MS17HHS0Mh4dLCm0PdEs0cvbyO-j1racnWYrDMY4eF4",
+										"description": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"product_id\":6,\n\t\"qty\":7\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Get user transaction_detail Id (use jwt)",
+							"request": {
+								"url": "0.0.0.0:5000/user/transaction_detail/2",
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MDE1NDAsIm5iZiI6MTU1MTcwMTU0MCwianRpIjoiNjY5NzQ4ZjctMGE5My00NWU5LTg0ZWUtMTg1ZTY3NmMzMGM2IiwiZXhwIjoxNTUxNzg3OTQwLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.MS17HHS0Mh4dLCm0PdEs0cvbyO-j1racnWYrDMY4eF4",
+										"description": ""
+									}
+								],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Delete user transaction_detail Id (use jwt)",
+							"request": {
+								"url": "0.0.0.0:5000/user/transaction_detail/1",
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MDE1NDAsIm5iZiI6MTU1MTcwMTU0MCwianRpIjoiNjY5NzQ4ZjctMGE5My00NWU5LTg0ZWUtMTg1ZTY3NmMzMGM2IiwiZXhwIjoxNTUxNzg3OTQwLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.MS17HHS0Mh4dLCm0PdEs0cvbyO-j1racnWYrDMY4eF4",
+										"description": ""
+									}
+								],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "User/Transaction",
+					"description": "",
+					"item": [
+						{
+							"name": "Get user transaction",
+							"request": {
+								"url": "0.0.0.0:5000/user/transaction",
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MDQ2ODYsIm5iZiI6MTU1MTcwNDY4NiwianRpIjoiNzI0ODdkNWMtNDRhYi00NmMxLWI5NTQtM2JmNDA4OGVkYzM4IiwiZXhwIjoxNTUxNzkxMDg2LCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.3sBswNm0FAlCY-Hze0hDnbGD7rOTVuz-nOslOhSVUag",
+										"description": ""
+									}
+								],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Post user transaction",
+							"request": {
+								"url": "0.0.0.0:5000/user/transaction",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MDQ2ODYsIm5iZiI6MTU1MTcwNDY4NiwianRpIjoiNzI0ODdkNWMtNDRhYi00NmMxLWI5NTQtM2JmNDA4OGVkYzM4IiwiZXhwIjoxNTUxNzkxMDg2LCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.3sBswNm0FAlCY-Hze0hDnbGD7rOTVuz-nOslOhSVUag",
+										"description": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"payment_method_id\" : 1,\n\t\"shipping_method_id\" : 2\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Delete user transaction Id",
+							"request": {
+								"url": "0.0.0.0:5000/user/transaction/4",
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MDQ2ODYsIm5iZiI6MTU1MTcwNDY4NiwianRpIjoiNzI0ODdkNWMtNDRhYi00NmMxLWI5NTQtM2JmNDA4OGVkYzM4IiwiZXhwIjoxNTUxNzkxMDg2LCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.3sBswNm0FAlCY-Hze0hDnbGD7rOTVuz-nOslOhSVUag",
+										"description": ""
+									}
+								],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Put user transaction id",
+							"request": {
+								"url": "0.0.0.0:5000/user/transaction/1",
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MDQ2ODYsIm5iZiI6MTU1MTcwNDY4NiwianRpIjoiNzI0ODdkNWMtNDRhYi00NmMxLWI5NTQtM2JmNDA4OGVkYzM4IiwiZXhwIjoxNTUxNzkxMDg2LCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.3sBswNm0FAlCY-Hze0hDnbGD7rOTVuz-nOslOhSVUag",
+										"description": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"payment_method_id\" : 4,\n\t\"shipping_method_id\" : 3\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Post user transaction pembayaran id",
+							"request": {
+								"url": "0.0.0.0:5000/user/transaction/pembayaran/5",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MDQ2ODYsIm5iZiI6MTU1MTcwNDY4NiwianRpIjoiNzI0ODdkNWMtNDRhYi00NmMxLWI5NTQtM2JmNDA4OGVkYzM4IiwiZXhwIjoxNTUxNzkxMDg2LCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.3sBswNm0FAlCY-Hze0hDnbGD7rOTVuz-nOslOhSVUag",
+										"description": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"code_pembayaran\":\"karyadi123\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "get user (use jwt)",
+					"request": {
+						"url": {
+							"raw": "0.0.0.0:5000/user",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "5000",
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MDk0MzIsIm5iZiI6MTU1MTYwOTQzMiwianRpIjoiYzU1NTcwZWYtMTVjMi00MmVmLWI1ZjEtY2VlNTgzYjE1YmFmIiwiZXhwIjoxNTUxNjk1ODMyLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.kmz1vtJbq4wFTDYhNhHe3PLxt3F8J9Bw8zc5X0Rqhjw",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MDk0MzIsIm5iZiI6MTU1MTYwOTQzMiwianRpIjoiYzU1NTcwZWYtMTVjMi00MmVmLWI1ZjEtY2VlNTgzYjE1YmFmIiwiZXhwIjoxNTUxNjk1ODMyLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.kmz1vtJbq4wFTDYhNhHe3PLxt3F8J9Bw8zc5X0Rqhjw",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "put user (use jwt)",
+					"request": {
+						"url": "0.0.0.0:5000/user",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MDk0MzIsIm5iZiI6MTU1MTYwOTQzMiwianRpIjoiYzU1NTcwZWYtMTVjMi00MmVmLWI1ZjEtY2VlNTgzYjE1YmFmIiwiZXhwIjoxNTUxNjk1ODMyLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.kmz1vtJbq4wFTDYhNhHe3PLxt3F8J9Bw8zc5X0Rqhjw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"kur\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete user (use jwt)",
+					"request": {
+						"url": "0.0.0.0:5000/user",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MDk0MzIsIm5iZiI6MTU1MTYwOTQzMiwianRpIjoiYzU1NTcwZWYtMTVjMi00MmVmLWI1ZjEtY2VlNTgzYjE1YmFmIiwiZXhwIjoxNTUxNjk1ODMyLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJ1c2VyIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImthcnlhZGkiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6InVzZXIifX0.kmz1vtJbq4wFTDYhNhHe3PLxt3F8J9Bw8zc5X0Rqhjw",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get user payment method",
+					"request": {
+						"url": "0.0.0.0:5000/user/payment_method",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get user shipping method",
+					"request": {
+						"url": "0.0.0.0:5000/user/shipping_method",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"description": "",
+			"item": [
+				{
+					"name": "Client/Product",
+					"description": "",
+					"item": [
+						{
+							"name": "Get client product (use jwt)",
+							"request": {
+								"url": "0.0.0.0:5000/client/product",
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MzE5ODcsIm5iZiI6MTU1MTYzMTk4NywianRpIjoiMzk0MTg0NmYtZjE2NS00NjRjLTkzNTEtMzdjMjhlYjQ4YjJkIiwiZXhwIjoxNTUxNzE4Mzg3LCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJjbGllbnQifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjEsInVzZXJuYW1lIjoia2FyeWFkaSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiY2xpZW50In19.hwkpZnNeEkn30HTtxZj79jzEpYB7GQc_yJklX4q9LhE",
+										"description": ""
+									}
+								],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Post client product (use jwt)",
+							"request": {
+								"url": "0.0.0.0:5000/client/product",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTUzMjQsIm5iZiI6MTU1MTcxNTMyNCwianRpIjoiNzFjZjNiMTMtMWNhMS00NDQ2LWI3MDctNTA5MjcwN2U0NDJkIiwiZXhwIjoxNTUxODAxNzI0LCJpZGVudGl0eSI6eyJpZCI6MiwidXNlcm5hbWUiOiJjaHVzbmEiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImNsaWVudCJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MiwidXNlcm5hbWUiOiJjaHVzbmEiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImNsaWVudCJ9fQ.Gd49WrrhuJB-fKJxSH2MKiT2pi4_9BETb9v6_uIYC2A",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nama\" : \"tas punggung\",\n\t\"vendor\" : \"dakuku\",\n\t\"price\": 500000,\n\t\"deskripsi\" : \"deskripsikan sendiri\"\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Put client product id (use jwt)",
+							"request": {
+								"url": "0.0.0.0:5000/client/product/3",
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MzE5ODcsIm5iZiI6MTU1MTYzMTk4NywianRpIjoiMzk0MTg0NmYtZjE2NS00NjRjLTkzNTEtMzdjMjhlYjQ4YjJkIiwiZXhwIjoxNTUxNzE4Mzg3LCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJjbGllbnQifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjEsInVzZXJuYW1lIjoia2FyeWFkaSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiY2xpZW50In19.hwkpZnNeEkn30HTtxZj79jzEpYB7GQc_yJklX4q9LhE",
+										"description": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"description": ""
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 3,\n    \"nama\": \"tas lokal malang\",\n    \"vendor\": \"not3\",\n    \"deskripsi\": \"deskripsikan sendiri\",\n    \"product_type_id\": 0,\n    \"harga\": 550000,\n    \"status\": 1,\n    \"url_picture\": \"www.gambar.com\",\n    \"qty\": 5,\n    \"client_id\": 1\n}"
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Delete client product id (use jwt)",
+							"request": {
+								"url": "0.0.0.0:5000/client/product/4",
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MzE5ODcsIm5iZiI6MTU1MTYzMTk4NywianRpIjoiMzk0MTg0NmYtZjE2NS00NjRjLTkzNTEtMzdjMjhlYjQ4YjJkIiwiZXhwIjoxNTUxNzE4Mzg3LCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJjbGllbnQifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjEsInVzZXJuYW1lIjoia2FyeWFkaSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiY2xpZW50In19.hwkpZnNeEkn30HTtxZj79jzEpYB7GQc_yJklX4q9LhE",
+										"description": ""
+									}
+								],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "get client (use jwt)",
+					"request": {
+						"url": "0.0.0.0:5000/client",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MTI0OTcsIm5iZiI6MTU1MTYxMjQ5NywianRpIjoiODk0OTZmYTktYTc4Ni00OTVmLTliYmQtNGFiNjJmNTllZmU0IiwiZXhwIjoxNTUxNjk4ODk3LCJpZGVudGl0eSI6eyJpZCI6MiwidXNlcm5hbWUiOiJjaHVzbmEiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImNsaWVudCJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MiwidXNlcm5hbWUiOiJjaHVzbmEiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImNsaWVudCJ9fQ.dzxPjQRnCz4pzmIcF3PFRTfkxtn1llAlI_W3F3xzF2Y",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "put client (use jwt)",
+					"request": {
+						"url": "0.0.0.0:5000/client",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MTI0OTcsIm5iZiI6MTU1MTYxMjQ5NywianRpIjoiODk0OTZmYTktYTc4Ni00OTVmLTliYmQtNGFiNjJmNTllZmU0IiwiZXhwIjoxNTUxNjk4ODk3LCJpZGVudGl0eSI6eyJpZCI6MiwidXNlcm5hbWUiOiJjaHVzbmEiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImNsaWVudCJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MiwidXNlcm5hbWUiOiJjaHVzbmEiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImNsaWVudCJ9fQ.dzxPjQRnCz4pzmIcF3PFRTfkxtn1llAlI_W3F3xzF2Y",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"chusnafaiza\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete client (use jwt)",
+					"request": {
+						"url": "0.0.0.0:5000/client",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MTI0OTcsIm5iZiI6MTU1MTYxMjQ5NywianRpIjoiODk0OTZmYTktYTc4Ni00OTVmLTliYmQtNGFiNjJmNTllZmU0IiwiZXhwIjoxNTUxNjk4ODk3LCJpZGVudGl0eSI6eyJpZCI6MiwidXNlcm5hbWUiOiJjaHVzbmEiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImNsaWVudCJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MiwidXNlcm5hbWUiOiJjaHVzbmEiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImNsaWVudCJ9fQ.dzxPjQRnCz4pzmIcF3PFRTfkxtn1llAlI_W3F3xzF2Y",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get user token",
+			"request": {
+				"url": {
+					"raw": "0.0.0.0:5000/token/user?username=karyadi&password=123456",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"token",
+						"user"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "karyadi",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTA4MTY5NTgsIm5iZiI6MTU1MDgxNjk1OCwianRpIjoiOWMxYjA2ODctYTBlMC00ZDdkLWEwMzgtMWZkODZiODI5OGFjIiwiZXhwIjoxNTUwOTAzMzU4LCJpZGVudGl0eSI6eyJpZCI6MSwiY2xpZW50X2tleSI6ImthcnlhZGkiLCJjbGllbnRfc2VjcmV0Ijoia2FyeWFkaSIsIm1vZGUiOiJhZG1pbiJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJpZCI6MSwiY2xpZW50X2tleSI6ImthcnlhZGkiLCJjbGllbnRfc2VjcmV0Ijoia2FyeWFkaSIsIm1vZGUiOiJhZG1pbiJ9fQ.C7tPHQVnC1hjxieN26nD1pSqMxoN2osJvXQY8z-VzGQ",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"karyadi\",\n\t\"password\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get client token",
+			"request": {
+				"url": {
+					"raw": "0.0.0.0:5000/token/client?username=chusna&password=123456",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"token",
+						"client"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "chusna",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get admin token",
+			"request": {
+				"url": {
+					"raw": "0.0.0.0:5000/token/admin?username=eka&password=123456",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"token",
+						"admin"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "eka",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get admin user (use jwt)",
+			"request": {
+				"url": "0.0.0.0:5000/admin/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post admin user (use jwt)",
+			"request": {
+				"url": "0.0.0.0:5000/admin/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"yovan\",\n\t\"password\": 12345\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "put admin user id (use jwt)",
+			"request": {
+				"url": "0.0.0.0:5000/admin/user/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"yoan\",\n\t\"password\": 12345\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete admin user id",
+			"request": {
+				"url": "0.0.0.0:5000/admin/user/2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get client product_type",
+			"request": {
+				"url": "0.0.0.0:5000/client/product_type",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get admin client",
+			"request": {
+				"url": "0.0.0.0:5000/admin/client",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "post admin client",
+			"request": {
+				"url": "0.0.0.0:5000/admin/client",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"Azril\",\n\t\"password\" : \"azrilxakep\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "put admin client id",
+			"request": {
+				"url": "0.0.0.0:5000/admin/client/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"zizril\",\n\t\"password\" : \"azrilxakep\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get admin client id",
+			"request": {
+				"url": "0.0.0.0:5000/admin/client/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get client product id",
+			"request": {
+				"url": "0.0.0.0:5000/client/product/3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE2MzE5ODcsIm5iZiI6MTU1MTYzMTk4NywianRpIjoiMzk0MTg0NmYtZjE2NS00NjRjLTkzNTEtMzdjMjhlYjQ4YjJkIiwiZXhwIjoxNTUxNzE4Mzg3LCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJrYXJ5YWRpIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJzdGF0dXMiOiJjbGllbnQifSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIiwidXNlcl9jbGFpbXMiOnsiaWQiOjEsInVzZXJuYW1lIjoia2FyeWFkaSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiY2xpZW50In19.hwkpZnNeEkn30HTtxZj79jzEpYB7GQc_yJklX4q9LhE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get admin product id",
+			"request": {
+				"url": "0.0.0.0:5000/admin/product/6",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "post admin product",
+			"request": {
+				"url": "0.0.0.0:5000/admin/product",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nama\" : \"tas punggung\",\n\t\"vendor\" : \"dakuku\",\n\t\"price\": 500000,\n\t\"deskripsi\" : \"deskripsikan sendiri\",\n\t\"client_id\" : 3\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "put admin product id",
+			"request": {
+				"url": "0.0.0.0:5000/admin/product/6",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n\t\"status\": \"ada\",\n    \"url_picture\": \"www.wkwkwkwk.com\",\n    \"qty\": 100,\n    \"client_id\": 2\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete admin product id",
+			"request": {
+				"url": "0.0.0.0:5000/admin/product/9",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get admin product",
+			"request": {
+				"url": {
+					"raw": "0.0.0.0:5000/admin/product?p=2",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"product"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTE3MTExOTMsIm5iZiI6MTU1MTcxMTE5MywianRpIjoiYzZiODhmNzAtOWE4NS00ZTY0LTk2MTgtMjMwMzg1Yzg2NDA2IiwiZXhwIjoxNTUxNzk3NTkzLCJpZGVudGl0eSI6eyJpZCI6MSwidXNlcm5hbWUiOiJla2EiLCJwYXNzd29yZCI6IjEyMzQ1NiIsInN0YXR1cyI6ImFkbWluIn0sImZyZXNoIjpmYWxzZSwidHlwZSI6ImFjY2VzcyIsInVzZXJfY2xhaW1zIjp7ImlkIjoxLCJ1c2VybmFtZSI6ImVrYSIsInBhc3N3b3JkIjoiMTIzNDU2Iiwic3RhdHVzIjoiYWRtaW4ifX0.Nm2TKh-KLMfNL5Cau5ttuNfhgd7I7-OooRIJ6j4W8H4",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

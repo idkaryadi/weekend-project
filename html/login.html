@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body class="login-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class=" login-title">
+                        <img src="assets/img/Cowicon.svg" width="50" height="50" class="d-inline-block align-top" alt="">
+                        <strong>Ternakku</strong>
+                    </div>
+                    <div class="login-input">
+                        Belum punya Akun? <a href="signup.html">Daftar disini.</a>
+                    </div>
+                    <form onsubmit="validationLogin();" action="dashboard.html">
+                        <!--  onsubmit="validation();" -->
+                        <input class="login-input" type="text" name="" id ="username" placeholder="Username"><br><br>
+                        <input class="login-input" type="password" name="" id="password" placeholder="Password"><br><br>
+                        <input class="tambah" type="checkbox" name="">Ingat saya
+                        <input type="submit" id="middle-submit" class="login-bottom btn btn-secondary" value="Login">
+                    </form>
+                    <br>
+                    <a class="tambah" href="#">Lupa password?</a>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

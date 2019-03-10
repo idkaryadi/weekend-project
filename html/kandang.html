@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kandang</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    </head>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="home.html">
+                <!-- tambahkan icon -->
+                <img src="assets/img/cow.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <strong>Ternakku</strong>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                <!-- <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kategori
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Sapi</a>
+                            <a class="dropdown-item" href="#">Kambing</a>
+                            <a class="dropdown-item" href="#">Domba</a>
+                            <a class="dropdown-item" href="#">Lele</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Lain lain</a>
+                        </div>
+                    </li>
+                </ul> -->
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Mau ternak ..." aria-label="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Cari</button> 
+                </form>
+                <div class="navbar-nav ml-auto">
+                    <div class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </div>       
+                <div>
+            </div>
+        </nav>
+        <!-- <div class="dropdown-menu ml-auto show">
+            <form class="px-4 py-3">
+                <div class="form-group">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+                <hr class="dropdown-divider">
+                <a class="dropdown-item" href="#">Have account? Sign up</a>
+                <a class="dropdown-item" href="#">Forgot password?</a>
+        </div>  dropdown-menu .//  -->
+    </header>
+
+    <body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="product.html">Product</a></li>
+            <li class="breadcrumb-item"><a href="details.html">Detail</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Kandang</li>
+            <li class="ml-auto">
+                <a href="kandang.html">
+                    <span data-feather="shopping-cart"></span>
+                    <strong>Kandangku</strong>
+                </a>
+            </li>
+        </ol>
+    </nav>
+        <div class="container-fluid after-breadcrumb">       
+            <h3>Kandangku</h3>
+            <div class="table-responsive">
+                <table class="table table-striped table-sm">
+                <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>Nama</th>
+                    <th>Gambar</th>
+                    <th>Kategori</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Hapus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                    <td>Sapi Pejantan Tangguh</td>
+                    <td>
+                        <img src="assets/img/sapi.JPG" class="img-kandangku">
+                    </td>
+                    <td>Sapi</td>
+                    <td>Rp 20.000.000,00</td>
+                    <td>4</td>
+                    <td><button type="button" class="btn btn-outline-dark btn-sm">Hapus</button></td>
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    <td>Sapi Perah</td>
+                    <td>
+                        <img src="assets/img/sapi.jpeg" class="img-kandangku">
+                    </td>
+                    <td>Sapi</td>
+                    <td>Rp 15.000.000,00</td>
+                    <td>6</td>
+                    <td><button type="button" class="btn btn-outline-dark btn-sm">Hapus</button></td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td>Sapi Pedaging</td>
+                    <td>
+                        <img src="assets/img/peternakan-sapi.jpg" class="img-kandangku">
+                    </td>
+                    <td>Sapi</td>
+                    <td>Rp 22.000.000,00</td>
+                    <td>2</td>
+                    <td><button type="button" class="btn btn-outline-dark btn-sm">Hapus</button></td>
+                    </tr>
+                    <tr>
+                    <td>4</td>
+                    <td>Lele KW Super</td>
+                    <td>
+                        <img src="assets/img/lelel.JPG" class="img-kandangku">
+                    </td>
+                    <td>Lele</td>
+                    <td>Rp 50.000,00</td>
+                    <td>2</td>
+                    <td><button type="button" class="btn btn-outline-dark btn-sm">Hapus</button></td>
+                    </tr>
+                    <tr>
+                    <td>5</td>
+                    <td>Marmut</td>
+                    <td>
+                        <img src="assets/img/marmut.jpeg" class="img-kandangku">
+                    </td>
+                    <td>Marmut</td>
+                    <td>Rp 50.000,00</td>
+                    <td>2</td>
+                    <td><button type="button" class="btn btn-outline-dark btn-sm">Hapus</button></td>
+                    </tr>
+                </tbody>
+                </table>
+                <button type="button" class="btn btn-outline-warning ml-auto"><strong>Bayar</strong></button>
+            </div>
+        </div>
+
+    <footer>
+        <div class="bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-9 contact-info">
+                        <a href="https://www.google.com/maps" class="social-link"><strong>PT Ternakku Bersemi</strong></a>
+                        <br>
+                        Jalan Yang Tak Pernah Ada No 2, <br>
+                        Jakarta, Indonesia
+                    </div>
+                    <div class="col-md-3 contact-info">
+                        <strong>Contact: (021)123456</strong><br>
+                        <strong>Fax: (021)123456</strong>
+                        <a href="https://www.facebook.com" class="social-link">
+                            <br>
+                            <span class="social-media" data-feather="facebook"></span>
+                            <strong>Facebook</strong>
+                        </a>
+                        <a href="https://www.instagram.com" class="social-link">
+                            <br>
+                            <span class="social-media" data-feather="instagram"></span>
+                            <strong>Instagram</strong>
+                        </a>
+                        <a href="https://www.twitter.com" class="social-link">
+                            <br>
+                            <span class="social-media" data-feather="twitter"></span>
+                            <strong>Twitter</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

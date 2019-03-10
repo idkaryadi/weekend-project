@@ -1,0 +1,83 @@
+*)public
+database : produts
+get/public/product : get all product information
+get/public/product/1 : get all product information based on client_id
+
+database : clients
+get/public/client/1 : get all product information based on client_id
+
+kategori bisa di masukan ke dalemnya, opsi lain di tampilkan
+get/public/product_type/1 : get all product information based on its category
+
+database : users, clients
+post/public/signup : sign up as a client or user
+
+*)user
+database : users
+get/user/() : get information about his account
+put/user/() : update information about its account
+delete/user : delete his account
+
+// database : product + product_descriptions
+// get/user/product : get a ll product information
+// get/user/product/1 : get all product information based on client_id
+
+database : payment_methods
+get/user/payment_methods : get all payment methods that available
+// post/user/payment_methods : post payment methods in transactions
+
+database : shipping_methods
+get/user/shipping_methods : get all payment methods that available
+// post/user/shipping_methods : post payment methods in transactions
+
+database : transaction
+put/user/payment_status : update payment status in transactions
+
+database : transaction_details
+get/user/transaction_details : post new item to buy
+get/user/transaction_details/id : post new item to buy
+post/user/transaction_details : post new item to buy
+delete/user/transactions_details/id : delete/cancel transactions details
+put/user/transaction_details/id : edit item to buy
+
+database : transactions
+post/user/transactions : post new transactions
+put/user/transactions : edit transactions
+get/user/transacsion : show all transacsion history
+get/user/transacsion/id : show last transacsion history
+delete/user/transacsion/id : delete/cancel transactions
+
+*)admin
+database : clients, users, admins, products, product_types, payment_methods, shipping_methods, product_descriptions
+get/
+post/
+put/
+delete/
+
+database : transactions
+get/
+
+database : transaction_details
+get/
+
+*)client
+database : clients
+get/client/() : get information about his account
+put/client/() : update information about its account
+delete/client : delete his account
+
+database : products
+get/product/
+putproduct/id
+post/product/
+delete/product/id
+
+database : products
+get/products_description
+get/products_description/id
+post/products_description
+put/products_description
+delete/products_description
+
+database : transaction_details 
+get/transaction_details/ : all transaction of its product
